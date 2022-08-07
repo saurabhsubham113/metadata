@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import bgimage from "../public/assets/bg-shorten-desktop.svg";
 import axios from "axios";
 import Previewcard from "../components/previewCard";
 import BrandCard from "../components/brandCard";
@@ -46,6 +45,7 @@ const Main = () => {
     }
   };
   const getMetaData = async (e) => {
+    console.log(process.env.API_URI )
     try {
       if (!checkValidUrl(input)) {
         return alert("please enter a valid url");
