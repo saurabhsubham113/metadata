@@ -1,0 +1,27 @@
+{
+  "name": "ineuron",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "ver": "vercel --prod"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "cheerio": "^1.0.0-rc.12",
+    "html-metadata-parser": "^2.0.4",
+    "next": "12.2.3",
+    "puppeteer": "^16.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "vercel": "^27.3.3"
+  },
+  "devDependencies": {
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.3"
+  }
+}

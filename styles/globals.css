@@ -1,0 +1,155 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* utiliy */
+.m0 {
+  margin: 0;
+}
+.p0 {
+  padding: 0;
+}
+/* CSS colors  starts*/
+/* primary colors */
+.cyan {
+  color: hsl(180, 66%, 49%);
+}
+.bg-cyan {
+  background-color: hsl(180, 66%, 49%);
+}
+.d-voilet {
+  color: hsl(257, 27%, 26%);
+}
+.bg-d-voilet {
+  background-color: hsl(257, 27%, 26%);
+}
+/* secondary colors */
+.red {
+  color: hsl(0, 87%, 67%);
+}
+.bg-red {
+  background-color: hsl(0, 87%, 67%);
+}
+/* netural colors */
+
+.gray {
+  color: hsl(0, 0%, 75%);
+}
+.bg-gray {
+  background-color: hsl(0, 0%, 75%);
+}
+.gray-voilet {
+  color: hsl(257, 7%, 63%);
+}
+.bg-gray-voilet {
+  background-color: hsl(257, 7%, 63%);
+}
+.v-dark-blue {
+  color: hsl(255, 11%, 22%);
+}
+.bg-v-dark-blue {
+  background-color: hsl(255, 11%, 22%);
+}
+.v-d-voilet {
+  color: hsl(260, 8%, 14%);
+}
+.bg-v-d-voilet {
+  background-color: hsl(260, 8%, 14%);
+}
+.bg-white {
+  background-color: hsl(0, 0%, 100%);
+}
+/* CSS colors ends*/
+
+/* font-size */
+.fz-sm {
+  font-size: 12px !important;
+}
+.fz-md {
+  font-size: 14px;
+}
+.fz-lg {
+  font-size: 16px;
+}
+.fz-xl {
+  font-size: 18px;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+
+/* pointer events */
+.pointer {
+  cursor: pointer;
+}
+.hov-cyan:hover {
+  color: hsl(180, 66%, 49%);
+}
+.social:hover svg path {
+  fill: hsl(180, 66%, 49%);
+  /* filter: invert(99%) sepia(87%) saturate(6540%) hue-rotate(123deg)
+    brightness(87%) contrast(83%); */
+}
+.inpError {
+  border: 3px solid rgba(250, 69, 69, 0.851) !important;
+}
+.inpError::placeholder,.error{
+  color:rgba(250, 69, 69, 0.851);
+}
+
+.nav:hover {
+  color: hsl(260, 8%, 14%);
+}
+
+/* animation */
+
+@keyframes updown {
+  0% {
+    transform: translateY(-4%);
+  }
+
+  50% {
+    transform: translateY(4%);
+  }
+
+  100% {
+    transform: translateY(-4%);
+  }
+}
+#__next {
+  height: 100vh;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
