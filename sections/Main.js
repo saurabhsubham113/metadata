@@ -53,7 +53,7 @@ const Main = () => {
       const newUrl = appendProtocol(input);
       setLoading(true);
       setIserror(false);
-      let res = await axios.post(process.env.API_URI + "metadata", {
+      let res = await axios.post("/api/metadata", {
         url: encodeURI(newUrl),
       });
       const metadata = {};
